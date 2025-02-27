@@ -1,6 +1,6 @@
 ## Parte 01: Iniciando projeto
 
-### O que é Spring boot
+### O que é Spring boot <img src="assets/logo_spring.png" alt="img" width="20"/>
 
 [Documentação do Spring Framework](https://spring.io/).
 
