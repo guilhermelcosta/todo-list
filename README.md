@@ -65,15 +65,13 @@ spring.jpa.hibernate.ddl-auto=update
 
 Explicando cada configuração:
 
-`spring.h2.console.enabled=true` -> habilita o console do banco H2
-
-`spring.h2.console.path=/console` -> define qual é o caminho para acessar o console
-
-`spring.datasource.url=jdbc:h2:mem:testdb` -> url do banco H2
-`jdbc` ->  indica o tipo de conexão: java database connectivity
-`h2` -> especifica o banco de dados que será utilizado
-`mem` -> indica que o banco será criado em memória
-`testdb` -> nome do banco de dados
+- `spring.h2.console.enabled=true` -> habilita o console do banco H2
+- `spring.h2.console.path=/console` -> define qual é o caminho para acessar o console
+- `spring.datasource.url=jdbc:h2:mem:testdb` -> url do banco H2
+  - `jdbc` ->  indica o tipo de conexão: java database connectivity
+  - `h2` -> especifica o banco de dados que será utilizado
+  - `mem` -> indica que o banco será criado em memória
+  - `testdb` -> nome do banco de dados
 
 🤯 **Curiosidade**: da para usar outras formas, como, por exemplo, em arquivos: `spring.datasource.url=jdbc:h2:file:./data/testdb`
 
