@@ -54,7 +54,7 @@ Dependências que utilizaremos:
 Vamos utilizar essas configurações:
 
 ```
-spring.application.name=todo-list  
+spring.application.name=todolist  
   
 # Configuracao banco de dados  
 spring.h2.console.enabled=true  
@@ -86,4 +86,4 @@ usuário e senha, podemos apenas clicar em `connect` para acessar o banco, sem i
 *Obs.: caso você mude a porta na qual o Spring vai rodar (por padrão 8080), consequentemente a porta desse console também será atualizada
 para a especificada.*
 
-![img.png](assets/img.png)
+![img.png](assets/console_h2.png)
