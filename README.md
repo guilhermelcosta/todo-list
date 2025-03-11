@@ -170,10 +170,10 @@ public class Task {
 - **@Column** → Especifica que os atributos description, dueDate e isCompleted também serão persistidos no banco, mesmo sem outras
   configurações.
 
-#### Por que usamos @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")?
+#### Por que usamos @JsonFormat(pattern = "yyyy-MM-dd HH:mm")?
 
 O **LocalDateTime** pode ser serializado de várias formas para JSON. Para garantir um formato consistente, usamos
-`@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")`, assim os dados enviados e recebidos seguem esse padrão, evitando problemas de
+`@JsonFormat(pattern = "yyyy-MM-dd HH:mm")`, assim os dados enviados e recebidos seguem esse padrão, evitando problemas de
 compatibilidade.
 
 Exemplo de saída JSON:
@@ -183,7 +183,7 @@ Exemplo de saída JSON:
   "id": 1,
   "title": "Comprar pão",
   "description": "Ir à padaria pela manhã",
-  "dueDate": "2024-10-15 08:30:00",
+  "dueDate": "2024-10-15 08:30",
   "completed": false
 }
 ```
